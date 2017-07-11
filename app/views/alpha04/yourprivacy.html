@@ -1,0 +1,26 @@
+{% extends '_layouts/layout_3-3.html' %}
+
+{% block page_title %}Privacy{{serviceName}}{% endblock %}
+
+{% block pageTitle %}Privacy{% endblock %}
+
+
+
+{% block content %}
+
+<p>It is important that your medical information should only be accessible by you and people you trust who are directly involved in your healthcare.</p>
+
+<p>If you become aware that anyone else has access to your information, please inform a healthcare professional at the earliest opportunity.</p>
+
+<p>Are you completing this registration process willingly, and do you understand that it is important that you don't share access details with anyone else?</p>
+  
+<form>
+    <div class="form-group">
+       <a class="button" id="continue" href="identity">yes</a>
+       <a class="button" id="continue" href="whatnext">no</a>
+  </div>
+  </form>
+
+{% endblock %}
+
+{% block footer %}{% endblock %}

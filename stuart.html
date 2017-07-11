@@ -1,0 +1,50 @@
+{% extends '_layouts/layout_2-3.html' %}
+
+{% block page_title %}Prove My Identity{{serviceName}}{% endblock %}
+
+{% block pageTitle %}Prove My Identity protoypes{% endblock %}
+
+{% block content %}
+
+  <div class="first-item"><h2>Stuart's second page with a change</h2>
+  <p>This page will be the hub for the work I do and I'll use it to link off to various files...yes</p>
+    <ul>
+      <li>
+        <a href="/alpha03/beta-invite">Link to GP Page</a>
+      </li>
+      <li>
+        <a href="/alpha02/beta-invite">Simple Verify LOA1 journey [Alpha 02]</a>
+      </li>
+      <li>
+      	<a href="/alpha01/beta-invite">Q&amp;A to decide which method best to login with [Alpha 01]</a>
+      </li>
+    </ul>
+
+    <h2 class="heading-large">Early Prototypes</h2>
+    <ul>
+      <li>
+      	<a href="https://hib-prototype-staging.herokuapp.com/">Steve Powell's early prototype</a>
+      </li>
+      <li>
+      	<a href="http://wfclients.com/nhs/identity/index.html">Wilson Fletcher's prototype</a><br>
+      	<span class="p__sub">Login: (user: nhs / pass: UuTh6ahc)<br>Verify prototype (user: pirate / pass: bunting)</span>
+      </li>
+    </ul>
+   </div>
+   <div class="accordion">This should an accordian
+<div>
+
+{% endblock %}
+
+{% block rightcol %}
+	<h2 class="heading-large" style="margin-top: 35px;">Verify Prototypes</h2>
+    <ul>
+      <li>
+      	<a href="http://govuk-verify-loa1.herokuapp.com/">Verify LOA1 prototype</a><br>
+      	<span class="p__sub">Ask Chris or Liz for username / password</span>
+      </li>
+     </ul>
+
+{% endblock %}
+
+{% block footer %}{% endblock %}

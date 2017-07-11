@@ -1,0 +1,38 @@
+{% extends '_layouts/layout_3-3.html' %}
+{% block pageTitle %}Your personal details{% endblock %}
+{% block content %}
+
+<p>We need to know your name and date of birth so that we can check your identity against our records.</p>
+
+<p>This will allow us to ensure that your information kept private and is only accessible by you.</p></br>
+
+<form>
+    
+  
+          <label class="form-label" for="field1">Username</label>
+          <input class="form-control" id="field1" name="field1" type="text">
+       
+      
+        <fieldset class="fieldwidths">
+       
+          <input type="text" size="299" />
+     
+          <input type="text">
+       
+          <input type="text">
+       
+       </fieldset>
+
+        
+          <label class="form-label" for="field4">Postcode</label>
+          <input class="form-control" type="text">
+          <a class="button_stu">Lookup</a>
+      
+  
+</form>
+    
+    <a class="button" id="continue" href="yourprivacy">Next</a>
+   
+
+{% endblock %}
+{% block footer %}{% endblock %}

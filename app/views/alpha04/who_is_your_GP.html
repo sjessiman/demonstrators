@@ -1,0 +1,26 @@
+{% extends '_layouts/layout_3-3.html' %}
+
+{% block page_title %}Find your local GP{{serviceName}}{% endblock %}
+
+{% block pageTitle %}Find your local GP{% endblock %}
+
+{% block content %}
+
+
+
+
+
+<div class="form-group" style="display: inline-block;">
+<form>
+	<fieldset>
+		<input type="text" name="postcode" maxlength="8" width="50px">
+		<div><a class="button" id="doctor_search_results" href="doctor_search_results">Find my GP</a></div>
+
+	</fieldset>
+</form>
+</div>
+
+
+{% endblock %}
+
+{% block footer %}{% endblock %}

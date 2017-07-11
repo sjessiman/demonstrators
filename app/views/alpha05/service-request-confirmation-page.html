@@ -1,0 +1,88 @@
+{% extends '_layouts/layout_3-3.html' %}
+{% block page_title %}Confirm details{serviceName}}{% endblock %}
+{% block pageTitle %}Confirm details{% endblock %}
+
+{% block content %}
+
+    <p>Please review the information you enter. You can either edit the information or click Submit if the information is correct </p><br/>
+    
+<style type="text/css">.small_instruction {font-weight: 500; font-size: 14px;} .shortwidth {max-width:220px;}</style>
+
+ <style>
+#myDiv {
+    border: currentColor:#ffffff;
+}
+</style>
+</head>
+<body>
+
+<br>
+<button class="button-secondary" onclick="myFunction()">Change border</button>
+
+<script>
+function myFunction() {
+    document.getElementById("myDiv").style.border = "thin dotted red";
+}
+
+</script>
+
+    <form ">
+
+    	<label>Service name </label>
+    	<input id="myDiv" type="text" name="firstname">
+    	<label>Strapline (optional)</label>
+    	<span class="small_instruction">140 characters maximum.</span>
+    	<textarea cols="10" rows="2"></textarea>
+
+		<label>Succinctly describe your service.</label>
+		<span class="small_instruction">This is the description we will use on your library entry.</span>
+		<textarea cols="10" rows="10"></textarea>
+
+
+		<label class="number">Service Web Address</label>
+		<input type="text" name="URL">
+
+		<label class="number ">Telephone number</label>
+		<span class="small_instruction">this is the ADMIN number we can reach you on.</span>
+		<input type="text" name="Telephone" class="shortwidth">
+		<label class="email">Email address</label>
+		<span class="small_instruction">this is the ADMIN email we can reach you on.</span>
+		<input type="text" type="email" name="email">
+		<hr>
+		<h3>Service Contact details for patients</h3>
+		<p>This section is to provide contact details for anyone using or wanting to use your service.</p>
+		
+		<label class="email">Telephone number</label>
+		<input type="text" name="telephone" class="shortwidth">
+		<label class="email">Contact name (Optional)</label>
+		<span class="small_instruction">Provide a contact name if needed.</span>
+		<input type="text" name="telephone" >
+		<label class="email">Fax number</label>
+		<input type="text" name="fax" class="shortwidth">
+		<label class="email">Email us</label>
+		<input type="text">
+		<label class="text">Twitter ID</label>
+		<input type="text">
+		<label class="email">Facebook address</label>
+		<input type="text">
+		<label class="text">Linkedin address</label>
+		<input type="text">
+		<label class="text">Address link 1</label>
+		<input type="text">
+		<label class="text">Address link 2</label>
+		<input type="text">
+		<label class="text">Address link 3</label>
+		<input type="text">
+		<span class="small_instruction">Please add any additional information we need to know.</span>
+		<textarea cols="10" rows="5"></textarea>
+
+
+    </form>
+
+	<a class="button" href="service-inclusion-form-thanks">Submit service details</a>
+
+  
+{% endblock %}
+
+
+{% block footer %}{% endblock %}

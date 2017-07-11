@@ -1,0 +1,26 @@
+{% extends '_layouts/layout_3-3.html' %}
+{% block page_title %}{{serviceName}}{% endblock %}
+{% block pageTitle %}Medication{% endblock %}
+
+{% block content %}
+
+<H3>When were you last prescribed medication?</H3></br>
+  
+  <form> 
+
+  	<fieldset>  
+
+      <div class="greybkground"><label>Less than one month ago</label><input type="radio" name="=radiogroup" value="Less"/><div>
+      <div class="greybkground"><label>Two to six months ago</label><input type="radio" name="=radiogroup"/><div>
+      <div class="greybkground"><label>Seven months to one year ago</label><input type="radio" name="=radiogroup"/><div>
+      <div class="greybkground"><label>Over a year ago</label><input type="radio" name="=radiogroup"/><div>
+
+   </fieldset>
+
+</form>
+
+
+
+{% endblock %}
+
+{% block footer %}{% endblock %}

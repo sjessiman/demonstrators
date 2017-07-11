@@ -1,0 +1,35 @@
+{% extends '_layouts/layout_3-3.html' %}
+{% block page_title %}Service inclusion request form{serviceName}}{% endblock %}
+{% block pageTitle %}Service inclusion request form{% endblock %}
+
+{% block content %}
+
+   <style type="text/css">.small_instruction {font-weight: 500; font-size: 14px;} .shortwidth {max-width:220px;}</style>
+
+    <p>In the first instance, please complete the form below. We will then contact you to discuss including you on the list.</p>
+
+    <form>
+    	<label>First name</label>
+    	<input type="text" name="firstname">
+    	<label>Last name</label>
+    	<input type="text" name="Lastname">
+		
+		<label class="number">Telephone number</label>
+		<input class="shortwidth" type="text" name="Telephone">
+		<label class="email">Email address</label>
+		<input type="text" type="email" name="email">
+		<label class="email">Service URL</label>
+		<input type="text" name="email">
+
+		<label>Please briefly describe the purpose of your service</label>
+		<span class="small_instruction">Include details about the prime objective of your service. Is it giving access to records or using technology to help patients with particular conditions? </span>
+		<textarea cols="10" rows="10"></textarea>
+
+    </form>
+
+    <a class="button" href="Inclusion-form-thanks">Submit</a>
+
+  
+{% endblock %}
+
+{% block footer %}{% endblock %}
