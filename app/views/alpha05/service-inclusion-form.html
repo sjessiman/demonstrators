@@ -12,32 +12,48 @@
 
     	<label>Service name </label>
     	<input type="text" name="firstname">
-    	<label>Strapline (optional)</label>
+    	<label>Strapline (optional - NOT FOR SEPT)</label>
     	<span class="small_instruction">140 characters maximum.</span>
     	<textarea cols="10" rows="2"></textarea>
 
-		<label>Succinctly describe your service.</label>
-		<span class="small_instruction">This is the description we will use on your library entry.</span>
-		<textarea cols="10" rows="10"></textarea>
+		<label>Describe your service</label>
+		<span class="small_instruction">This is the description we will use on your library entry. X chars Maximum</span>
+		<textarea cols="10" rows="4"></textarea>
 
 
 		<label class="number">Service Web Address</label>
+		<span  class="small_instruction">This will be used for the clickable Service title</span>
 		<input type="text" name="URL">
 
-		<label class="number ">Telephone number</label>
-		<span class="small_instruction">this is the ADMIN number we can reach you on.</span>
+		<label class="number ">Telephone number - NOT FOR SEPT</label>
+		<span  class="small_instruction">this is the ADMIN number we can reach you on.</span>
 		<input type="text" name="Telephone" class="shortwidth">
-		<label class="email">Email address</label>
-		<span class="small_instruction">this is the ADMIN email we can reach you on.</span>
+		<label class="email">Email address - NOT FOR SEPT</label>
+		<span  class="small_instruction">this is the ADMIN email we can reach you on.</span>
 		<input type="text" type="email" name="email">
+
+		<fieldset>
+		<label> Upload your logo</label>
+		<input type="text" class="shortwidth" name="image_upload">
+		<a class="button" name="Upload">Upload image</a>
+		</fieldset>
+
+
+		<label Upload you logo>Additional information</label>
+		<span class="small_instruction">Please add additional information you think we need to know.</span>
+		<textarea cols="10" rows="5"></textarea>
 		<hr>
-		<h3>Service Contact details for patients</h3>
+		
+<!--Patient section not to be launched for September-->
+
+		<h3>Service Contact details for patients - NONE OF THE FOLLOW FIELDS FOR SEPT</h3>
 		<p>This section is to provide contact details for anyone using or wanting to use your service.</p>
 		
 		<label class="email">Telephone number</label>
 		<input type="text" name="telephone" class="shortwidth">
+		<span  class="small_instruction">For patients.</span>
 		<label class="email">Contact name (Optional)</label>
-		<span class="small_instruction">Provide a contact name if needed.</span>
+		<span  class="small_instruction">Provide a contact name if needed.</span>
 		<input type="text" name="telephone" >
 		<label class="email">Fax number</label>
 		<input type="text" name="fax" class="shortwidth">
@@ -49,19 +65,20 @@
 		<input type="text">
 		<label class="text">Linkedin address</label>
 		<input type="text">
+		<hr>
+		<h4>Service address</h4>
 		<label class="text">Address link 1</label>
 		<input type="text">
 		<label class="text">Address link 2</label>
 		<input type="text">
 		<label class="text">Address link 3</label>
 		<input type="text">
-		<span class="small_instruction">Please add any additional information we need to know.</span>
-		<textarea cols="10" rows="5"></textarea>
+		
 
 
     </form>
 
-	<a class="button" href="service-inclusion-form-thanks">Submit service details</a>
+	<a class="button" href="service-summary-page1">Submit service details</a>
 
   
 {% endblock %}
